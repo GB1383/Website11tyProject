@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+/* styling the header */
+.header {
+    background-color: #ffc0cb;
+    padding: 15px;
+    text-align: center;
+}
+
+/* styling navigation */
+.nav-menu {
+    overflow: hidden;
+    background-color: black;
+}
+
+.nav-menu a {
+    float: left;
+    text-align: center;
+    display: block;
+    color: cornsilk;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    background-color: rgb(240, 24, 240);
+    color: white;
+}
+
+/* styling content layout */
+.colA, .colB, .colC {
+    float: left;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+h2 {
+    color: darkolivegreen;
+    text-align: center;
+}
+
+.colB {
+    text-align: center;
+}
+
+/* media query settings for responsive website */
+
+/* size for tablets, setting it to 50% will create 2 columns */
+@media screen and (max-width:600px) {
+    .colA, .colB, .colC {
+        width: 50%
+    }
+}
+/* size for cellphones, setting it to 100% will create 1 column */
+@media screen and (max-width:400px) {
+    .colA, .colB, .colC {
+        width: 100%
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* styling the header */
+header {
+    background-color: rgb(240, 24, 240);
+    padding: 30px;
+    text-align: center;
+}
+
+/* styling navigation */
+/* instead of using float and not having control, use display flex and flex direction on a container(parent element), not the child elements */
+.nav {
+    overflow: hidden;
+    background-color: rgb(255, 251, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+
+}
+
+.nav a {
+    
+    text-align: center;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(45, 216, 207, 0.808);
+    color: white;
+}
+/* fr  stands for fraction unit, 
+it represents a fraction of available space in the grid container. */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+.grid {
+    text-align: center;
+    padding: 10px;
+}
+
+#about, #blog {
+    background-color: black;
+    color: white;
+}
+
+ 
+
+.contact {
+
+    gap: 16px;
+
+    padding: 48px 16px;
+    background-color: #ffc0cb;;
+
+}
+
+ 
+
+.contact-text {
+
+    flex-grow: 1;
+
+    flex-basis: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+ 
+
+.contact-text p {
+
+    font-size: var(--font-size-l);
+
+    line-height: var(--line-height-l);
+
+    margin: 0;
+
+    margin-bottom: 32px;
+
+}
+
+ 
+
+.contact-text .button {
+
+    margin-top: auto;
+
+}
+
+ 
+
+.contact-spacer {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    color: var(--background4);
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: var(--line-height-xxl);
+
+    text-align: center;
+
+    justify-content: center;
+
+}
+
+ 
+
+.contact-form {
+
+    flex-basis: 50%;
+
+    flex-grow: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 32px;
+
+}
+
+ 
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+    border-color: #999;
+
+}
+
+ 
+
+.form-group label {
+
+    font-size: var(--font-size-s);
+
+    line-height: var(--line-height-s);
+
+    font-weight: 700;
+
+    color: var(--text2);
+
+}
+
+ 
+
+.form-group input, .form-group select, .form-group textarea {
+
+    min-height: 56px;
+
+    border: 3px solid transparent;
+
+    background: var(--background3);
+
+    border-radius: 4px;
+
+    color: var(--text2);
+
+    padding: 0 12px;
+
+    font-size: var(--font-size-m);
+
+    line-height: var(--line-height-m);
+
+    font-family: var(--font-family-default);
+
+}
+
+ 
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+
+    border-color: var(--text);
+
+    color: var(--text);
+
+    outline: none;
+
+}
+
+ 
+
+::placeholder {
+
+    color: #999;
+
+}
+
+ 
+
+.form-group textarea {
+
+    min-height: 120px;
+
+    padding-top: 12px;
+
+    padding-bottom: 12px;
+
+}
+
+ 
+
+.section {
+
+    scroll-margin-top: 88px;
+
+}
+
+
+.img {
+    height: 100%;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    border: 1px solid darkslategray;
+  }
+
+.row {
+width: 100%;
+  }

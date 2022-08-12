@@ -1,0 +1,43 @@
+---
+title: Homepage
+layout: base.liquid
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- header for website -->
+    <header class="header">
+        <h2>Welcome to website made by 11ty</h2>
+    </header>
+    <div class="nav-menu">
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+    </div><br>
+<img src="../img/back.jpg" alt="img" class="img">
+    <div class="row">
+        <div class="colA" id="about">
+            <h2>About Us</h2>
+            <p> We are a group students who are working on 11ty Project together. We have learned and implemented this website.</p>
+        </div>
+        <div class="colB" id="contact">
+            <h2>Contact Us</h2>
+            <h3>You can find us here:</h3>
+            <p>Gobind - N01518874</p>
+            <p>Urvin Patel - N01519084</p>
+            <p>HumberCollege.ca</p>
+        </div>
+        <div class="colC" id="blog">
+            <h2>We have a Blog!</h2>
+            <p>Check out our blog. You can find product reviews, get the latest information on the newest phones, and how to update and upgrade.</p>
+        </div>
+    </div>
+</body>
+</html>
